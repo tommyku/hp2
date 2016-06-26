@@ -17,7 +17,7 @@ gulp.task('jade', function(){
         this.emit('end');
     }}))
     .pipe(jade({pretty: true}))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
@@ -30,7 +30,7 @@ gulp.task('scss', function(){
     }}))
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./css/'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
@@ -43,22 +43,19 @@ gulp.task('coffee', function(){
         this.emit('end');
     }}))
     .pipe(coffee({bare: true}))
-    .pipe(gulp.dest('./dist/js/'))
+    .pipe(gulp.dest('./js/'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
 gulp.task('static', function(){
   gulp.src(['vendor/**/*'], { base: 'vendor' })
-    .pipe(gulp.dest('./dist/'));
-  gulp.src(['bower_components/**/*'], { base: 'bower_components' })
-    .pipe(gulp.dest('./dist/bower_components'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('build', ['jade', 'scss', 'coffee', 'static']);
 
 gulp.task('serve', function() {
   connect.server({
-    root: 'dist',
     livereload: argv.live
   });
 });
