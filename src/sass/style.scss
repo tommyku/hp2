@@ -83,17 +83,3 @@ a {
     margin-bottom: 0.25rem;
   }
 }
-
-#gittree-content {
-  display: none;
-}
-
-#gittree-show {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  margin: 0;
-  &:checked + #gittree-content {
-    display: block;
-  }
-}

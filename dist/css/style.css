@@ -66,14 +66,3 @@ a {
   margin-bottom: 0.25rem; }
   .tablets label:hover {
     cursor: default; }
-
-#gittree-content {
-  display: none; }
-
-#gittree-show {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  margin: 0; }
-  #gittree-show:checked + #gittree-content {
-    display: block; }
