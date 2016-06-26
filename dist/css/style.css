@@ -50,6 +50,11 @@ a {
   .tag:before {
     content: '#'; }
 
+.two-column {
+  -webkit-columns: 2 auto;
+     -moz-columns: 2 auto;
+          columns: 2 auto; }
+
 .tablets label {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -66,14 +71,3 @@ a {
   margin-bottom: 0.25rem; }
   .tablets label:hover {
     cursor: default; }
-
-#gittree-content {
-  display: none; }
-
-#gittree-show {
-  visibility: hidden;
-  height: 0;
-  width: 0;
-  margin: 0; }
-  #gittree-show:checked + #gittree-content {
-    display: block; }
