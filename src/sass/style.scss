@@ -66,6 +66,10 @@ a {
   }
 }
 
+.two-column {
+  columns: 2 auto;
+}
+
 .tablets {
   label {
     &:hover {

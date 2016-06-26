@@ -50,6 +50,11 @@ a {
   .tag:before {
     content: '#'; }
 
+.two-column {
+  -webkit-columns: 2 auto;
+     -moz-columns: 2 auto;
+          columns: 2 auto; }
+
 .tablets label {
   -webkit-user-select: none;
      -moz-user-select: none;
