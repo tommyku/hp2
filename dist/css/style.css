@@ -1,7 +1,7 @@
 html, body {
   font-size: medium;
   font-weight: normal;
-  font-family: sans;
+  font-family: sans-serif;
   line-height: 1.45;
   color: #222222; }
 
@@ -25,6 +25,9 @@ h2 {
   h2 i {
     font-family: monospace; }
 
+h4 {
+  margin-bottom: 0; }
+
 p {
   margin: 0.5rem 0;
   padding-left: 0.5rem; }
@@ -37,6 +40,12 @@ a {
     color: black; }
   a:hover, a:active {
     color: lightgray; }
+
+.project {
+  border: 1px solid gray;
+  padding: 0.5rem; }
+  .project .desc {
+    color: black; }
 
 .tag {
   display: inline-block;
@@ -54,6 +63,9 @@ a {
   -webkit-columns: 2 auto;
      -moz-columns: 2 auto;
           columns: 2 auto; }
+  .two-column a {
+    display: inline-block;
+    margin-bottom: 1rem; }
 
 .tablets label {
   -webkit-user-select: none;

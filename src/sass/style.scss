@@ -1,7 +1,7 @@
 html, body {
   font-size: medium;
   font-weight: normal;
-  font-family: sans;
+  font-family: sans-serif;
   line-height: 1.45;
   color: #222222;
 }
@@ -31,6 +31,10 @@ h2 {
   }
 }
 
+h4 {
+  margin-bottom: 0;
+}
+
 p {
   margin: 0.5rem 0;
   padding-left: 0.5rem;
@@ -52,6 +56,14 @@ a {
   }
 }
 
+.project {
+  border: 1px solid gray;
+  padding: 0.5rem;
+  .desc {
+    color: black;
+  }
+}
+
 .tag {
   display: inline-block;
   font-style: normal;
@@ -68,6 +80,10 @@ a {
 
 .two-column {
   columns: 2 auto;
+  a {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
 }
 
 .tablets {
