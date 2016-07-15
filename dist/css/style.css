@@ -1,7 +1,7 @@
 html, body {
   font-size: medium;
   font-weight: normal;
-  font-family: sans;
+  font-family: sans-serif;
   line-height: 1.45;
   color: #222222; }
 
@@ -20,8 +20,7 @@ h1 {
 h2 {
   font-size: larger;
   text-align: center;
-  font-weight: normal;
-  font-family: serif; }
+  font-weight: normal; }
   h2 i {
     font-family: monospace; }
 
@@ -49,6 +48,9 @@ a {
   border-radius: 1em; }
   .tag:before {
     content: '#'; }
+
+#project-list li {
+  margin-bottom: 1em; }
 
 .two-column {
   -webkit-columns: 2 auto;
