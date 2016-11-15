@@ -4,25 +4,25 @@ var gulp = require('gulp'),
 var autoprefixer = require('gulp-autoprefixer');
 var coffee = require('gulp-coffee');
 var sass = require('gulp-sass');
-var jade = require('gulp-jade');
+var pug = require('gulp-pug');
 var connect = require('gulp-connect');
 var argv = require('yargs').argv;
 var gulpif = require('gulp-if');
 
-gulp.task('jade', function(){
-  gulp.src(['src/jade/**/*.jade'])
+gulp.task('html', function(){
+  gulp.src(['src/html/**/*.pug'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
         this.emit('end');
     }}))
-    .pipe(jade({pretty: true}))
+    .pipe(pug({pretty: true}))
     .pipe(gulp.dest('./dist'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
-gulp.task('scss', function(){
-  gulp.src(['src/sass/**/*.scss'])
+gulp.task('css', function(){
+  gulp.src(['src/css/**/*.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -34,8 +34,8 @@ gulp.task('scss', function(){
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
-gulp.task('coffee', function(){
-  return gulp.src('src/coffee/**/*.coffee')
+gulp.task('js', function(){
+  return gulp.src('src/js/**/*.coffee')
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -54,7 +54,7 @@ gulp.task('static', function(){
     .pipe(gulp.dest('./dist/bower_components'));
 });
 
-gulp.task('build', ['jade', 'scss', 'coffee', 'static']);
+gulp.task('build', ['html', 'css', 'js', 'static']);
 
 gulp.task('serve', function() {
   connect.server({
@@ -64,7 +64,7 @@ gulp.task('serve', function() {
 });
 
 gulp.task('default', ['build', 'serve'], function(){
-  gulp.watch("src/jade/**/*.jade", ['jade']);
-  gulp.watch("src/sass/**/*.scss", ['scss']);
-  gulp.watch("src/coffee/**/*.coffee", ['coffee']);
+  gulp.watch("src/html/**/*.pug", ['html']);
+  gulp.watch("src/css/**/*.scss", ['css']);
+  gulp.watch("src/js/**/*.coffee", ['js']);
 });

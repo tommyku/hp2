@@ -1,5 +1,5 @@
 html, body {
-  font-size: medium;
+  font-size: large;
   font-weight: normal;
   font-family: sans-serif;
   line-height: 1.45;
@@ -49,7 +49,7 @@ a {
   .tag:before {
     content: '#'; }
 
-#project-list li {
+li {
   margin-bottom: 1em; }
 
 .two-column {
