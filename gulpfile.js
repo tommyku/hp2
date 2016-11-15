@@ -17,7 +17,7 @@ gulp.task('html', function(){
         this.emit('end');
     }}))
     .pipe(pug({pretty: true}))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./docs'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
@@ -30,7 +30,7 @@ gulp.task('css', function(){
     }}))
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('./docs/css/'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
@@ -43,22 +43,22 @@ gulp.task('js', function(){
         this.emit('end');
     }}))
     .pipe(coffee({bare: true}))
-    .pipe(gulp.dest('./dist/js/'))
+    .pipe(gulp.dest('./docs/js/'))
     .pipe(gulpif(argv.live, connect.reload()))
 });
 
 gulp.task('static', function(){
   gulp.src(['vendor/**/*'], { base: 'vendor' })
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./docs/'));
   gulp.src(['bower_components/**/*'], { base: 'bower_components' })
-    .pipe(gulp.dest('./dist/bower_components'));
+    .pipe(gulp.dest('./docs/bower_components'));
 });
 
 gulp.task('build', ['html', 'css', 'js', 'static']);
 
 gulp.task('serve', function() {
   connect.server({
-    root: 'dist',
+    root: 'docs',
     livereload: argv.live
   });
 });
