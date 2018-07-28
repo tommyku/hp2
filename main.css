@@ -120,6 +120,7 @@ section.me p {
 section.impression {
   background-color: white;
   background-image: url(/assets/background.jpg);
+  /* use img with object-fit and object-position for responsive image loading */
   background-size: cover;
   background-position: 28% center;
   background-repeat: no-repeat;
@@ -153,6 +154,21 @@ section.impression h2 {
   margin: 0.5rem 0;
   color: #eee;
   font-weight: lighter;
+}
+
+section.social {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+section.social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+section.social img {
+  width: 2rem;
+  height: 2rem;
 }
 
 footer {
