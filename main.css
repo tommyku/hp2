@@ -121,7 +121,7 @@ section.impression {
   background-color: white;
   background-image: url(/assets/background.jpg);
   background-size: cover;
-  background-position: 25% center;
+  background-position: 28% center;
   background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
@@ -143,7 +143,7 @@ section.impression h2 {
   padding-top: 7rem
 }
 
-h3 {
+.with-big-header h3.big-header {
   position: absolute;
   transform: rotate3d(0, 0, 1, -17deg);
   top: 0;
@@ -159,4 +159,15 @@ footer {
   font-size: 1.25rem;
   padding: 2rem 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .with-big-header {
+    padding-top: 5rem;
+  }
+
+  .with-big-header h3.big-header {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
