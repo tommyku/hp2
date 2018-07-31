@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   color: #222222;
   font-size: 16px;
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-family: 'Roboto Slab', sans-serif;
 }
 
@@ -117,12 +117,20 @@ hr {
   width: 20vw;
 }
 
+blockquote {
+  font-family: 'Playfair Display', serif;
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+}
+
 main, footer {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 1rem;
 }
 
-section.me p {
+main p {
   font-weight: lighter;
 }
 
@@ -149,10 +157,11 @@ section.impression h2 {
 
 .with-big-header {
   position: relative;
-  padding-top: 7rem
+  padding-top: 7rem;
 }
 
 .with-big-header h3.big-header {
+  font-family: 'Playfair Display', serif;
   position: absolute;
   transform: rotate3d(0, 0, 1, -17deg);
   top: 0;
@@ -160,8 +169,30 @@ section.impression h2 {
   font-size: 8rem;
   line-height: 8rem;
   margin: 0.5rem 0;
-  color: #eee;
+  color: #ccc;
   font-weight: lighter;
+}
+
+.with-big-header h3.big-header:before {
+  width: 50%;
+  height: 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: #aaa;
+  content: " ";
+}
+
+.with-big-header h3.big-header:after {
+  width: 50%;
+  height: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  background: #ddd;
+  content: " ";
 }
 
 section.social {
@@ -180,7 +211,6 @@ section.social img {
 }
 
 footer {
-  font-size: 1.25rem;
   padding: 2rem 0;
   text-align: center;
 }
@@ -219,7 +249,11 @@ footer {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 720px) {
+  header nav {
+    display: none;
+  }
+
   .with-big-header {
     padding-top: 5rem;
   }
