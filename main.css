@@ -210,6 +210,30 @@ section.social img {
   height: 2rem;
 }
 
+section.compass .compass-clip-text {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  clip-path: polygon(5% 0, 95% 10%, 90% 98%, 11% 98%);
+}
+
+section.compass .compass-clip-text h5 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+section.compass .compass-clip-text h4 {
+  font-size: 8rem;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+section.compass .compass-clip-text img {
+  clip-path: polygon(32% 1%, 84% 20%, 100% 53%, 100% 100%,  0 100%, 0 46%, 18% 9%);
+  width: 100%;
+}
+
 footer {
   padding: 2rem 0;
   text-align: center;
