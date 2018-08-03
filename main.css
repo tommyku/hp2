@@ -205,18 +205,41 @@ section.social img {
   height: 2rem;
 }
 
+section.eventxtra-1 .eventxtra-1-clip-text,
+section.eventxtra-2 .eventxtra-2-clip-text,
 section.compass .compass-clip-text {
+	max-width: 72rem;
+	margin: auto;
   background-color: #222;
   color: white;
   text-align: center;
-  clip-path: polygon(3% 0, 98% 10%, 90% 98%, 11% 98%);
   transition: background-color 0.5s ease-in-out;
+  padding-top: 2rem;
+}
+
+section.compass .compass-clip-text {
+  clip-path: polygon(3% 0, 98% 10%, 90% 98%, 11% 98%);
+}
+
+section.eventxtra-2 .eventxtra-2-clip-text {
+  clip-path: polygon(3% 11%, 98% 1%, 90% 98%, 11% 98%);
+}
+
+section.eventxtra-1 .eventxtra-1-clip-text {
+  clip-path: polygon(3% 0, 98% 10%, 90% 98%, 11% 98%);
+}
+
+section.eventxtra-1 .eventxtra-1-clip-text.revealed,
+section.eventxtra-2 .eventxtra-2-clip-text.revealed {
+  background-color: #cf2f2f;
 }
 
 section.compass .compass-clip-text.revealed {
   background-color: #00beee;
 }
 
+section.eventxtra-1 .eventxtra-1-clip-text h5,
+section.eventxtra-2 .eventxtra-2-clip-text h5,
 section.compass .compass-clip-text h5 {
   margin: auto;
   font-size: 2rem;
@@ -224,6 +247,8 @@ section.compass .compass-clip-text h5 {
   width: 80%;
 }
 
+section.eventxtra-1 .eventxtra-1-clip-text h4,
+section.eventxtra-2 .eventxtra-2-clip-text h4,
 section.compass .compass-clip-text h4 {
   font-size: 8rem;
   font-family: 'Playfair Display', serif;
@@ -231,6 +256,12 @@ section.compass .compass-clip-text h4 {
   width: 90%;
 }
 
+section.eventxtra-1 .eventxtra-1-clip-text img {
+	clip-path: polygon(20% 0%, 72% 0%, 100% 19%, 100% 100%, 50% 100%, 0 100%, 0 43%);
+	width: 100%;
+}
+
+section.eventxtra-2 .eventxtra-2-clip-text img,
 section.compass .compass-clip-text img {
   clip-path: polygon(32% 1%, 84% 20%, 100% 53%, 100% 100%,  0 100%, 0 46%, 18% 9%);
   width: 100%;
@@ -270,20 +301,28 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
+  section.eventxtra-1 .eventxtra-1-clip-text h5,
+  section.eventxtra-2 .eventxtra-2-clip-text h5,
   section.compass .compass-clip-text h5 {
     font-size: 1.5rem;
   }
 
+  section.eventxtra-1 .eventxtra-1-clip-text h4,
+  section.eventxtra-2 .eventxtra-2-clip-text h4,
   section.compass .compass-clip-text h4 {
     font-size: 5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
+  section.eventxtra-1 .eventxtra-1-clip-text h5,
+  section.eventxtra-2 .eventxtra-2-clip-text h5,
   section.compass .compass-clip-text h5 {
     font-size: 1rem;
   }
 
+  section.eventxtra-1 .eventxtra-1-clip-text h4,
+  section.eventxtra-2 .eventxtra-2-clip-text h4,
   section.compass .compass-clip-text h4 {
     font-size: 3rem;
   }
@@ -294,10 +333,14 @@ footer {
     padding: 1rem;
   }
 
+  section.eventxtra-1 .eventxtra-1-clip-text h5,
+  section.eventxtra-2 .eventxtra-2-clip-text h5,
   section.compass .compass-clip-text h5 {
     font-size: 1rem;
   }
 
+  section.eventxtra-1 .eventxtra-1-clip-text h4,
+  section.eventxtra-2 .eventxtra-2-clip-text h4,
   section.compass .compass-clip-text h4 {
     font-size: 2rem;
   }
