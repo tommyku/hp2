@@ -1,3 +1,4 @@
+/* global scrollMonitor */
 // The site should still work without any of these enhancements
 
 // watcher to add .revealed to .reveal-on-enter elements
@@ -21,6 +22,8 @@
 // smooth scrolling
 (function() {
   var $anchors = document.querySelectorAll('nav a[href^="#"]');
+
+  if (!document.body.scrollIntoView) return;
 
   $anchors.forEach(function($anchor) {
     $anchor.addEventListener('click', function(e) {
