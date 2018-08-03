@@ -25,10 +25,6 @@ header {
   margin: auto;
   box-sizing: border-box;
   max-width: 1280px;
-  /*position: fixed;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
 }
 
 header h2 {
@@ -136,7 +132,6 @@ main p {
 
 section.impression {
   background-color: white;
-  /* use img with object-fit and object-position for responsive image loading */
   background-size: cover;
   background-position: 28% center;
   background-repeat: no-repeat;
