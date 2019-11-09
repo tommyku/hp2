@@ -149,7 +149,7 @@ section.impression {
   background-size: cover;
   background-position: 28% center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: calc(100vh - 2rem);
   display: flex;
   align-items: center;
   justify-content: center;
