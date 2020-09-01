@@ -23,24 +23,39 @@
     </header>
 
     <section class="impression">
-      <h2>
-        飛<br />翔
-      </h2>
+      <img srcset="assets/selfie-c-320w.jpg 480w,
+                   assets/selfie-960w.jpg 960w,
+                   assets/selfie-1280w.jpg 1280w"
+           sizes="(max-width: 480px) 480px,
+                  (max-width: 960px) 960px,
+                  1280px"
+           class="selfie"
+           src="assets/selfie-1280w.jpg"
+           alt="My selfie" />
+      <img srcset="assets/couple-c-320w.jpg 480w,
+                   assets/couple-960w.jpg 960w,
+                   assets/couple-1280w.jpg 1280w"
+           sizes="(max-width: 480px) 480px,
+                  (max-width: 960px) 960px,
+                  1280px"
+           class="couple"
+           src="assets/couple-1280w.jpg"
+           alt="Photo of couple" />
     </section>
 
     <main>
       <section id="me" class="me with-big-header">
         <h3 class="big-header">Me</h3>
         <p>
-          My name is <strong>Tommy Ku</strong>, a Hong Kong-based <strong>full-stack web developer</strong>.
+          My name is <strong>Tommy Ku</strong>, a Hong Kong-based <strong>software engineer</strong>.
         </p>
         <p>
-          Over the past <strong>6 years</strong> I have been creating <a href="#project">websites</a>, <a href="#project">web apps</a>
+          Since 2012 I have been creating <a href="#project">websites</a>, <a href="#project">web apps</a>
           and <a href="#project">web-based system solutions</a>.
         </p>
         <p>
           Previously worked in Hong Kong &#127469;&#127472;, Taiwan &#127481;&#127484; and the US &#127482;&#127480;.
-          Currently a <strong>Technology Analyst at JP Morgan</strong> located in Hong Kong &#127469;&#127472;.
+          Currently a <strong>Software Engineer at JP Morgan</strong> located in Hong Kong &#127469;&#127472;.
         </p>
         <p>
           Recently graduated with first class honors from <a href="https://www.ust.hk" target="_blank">Hong Kong University of Science and Technology</a>,
@@ -50,12 +65,11 @@
 
       <section id="work" class="work with-big-header">
         <h3 class="big-header">Work</h3>
-        <hr />
-        <blockquote>
-          Rule 82<sup>nd</sup> “Undertake not what you cannot Perform but be Careful to keep your Promise.”
-          <div class="by">&mdash; Rules of Civility &amp; Decent Behavior in Company and Conversation</div>
-        </blockquote>
-        <hr />
+        <!--<blockquote>-->
+          <!--Rule 82<sup>nd</sup> “Undertake not what you cannot Perform but be Careful to keep your Promise.”-->
+          <!--<div class="by">&mdash; Rules of Civility &amp; Decent Behavior in Company and Conversation</div>-->
+        <!--</blockquote>-->
+        <!--<hr />-->
 
         <section>
           <p>
@@ -68,7 +82,7 @@
         <section class="jpmorgan">
           <section class="jpmorgan-clip-text clip-text reveal-on-enter">
             <h4>JP Morgan</h4>
-            <h5>Technology Analyst (Aug 2018-present)</h5>
+            <h5>Software Engineer (Aug 2018-present)</h5>
             <img src="/assets/jpmorgan.jpg" />
           </section>
         </section>

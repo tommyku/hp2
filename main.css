@@ -25,6 +25,7 @@ header {
   margin: auto;
   box-sizing: border-box;
   max-width: 1280px;
+  z-index: 100;
 }
 
 header h2 {
@@ -70,9 +71,9 @@ nav ul li {
 
 nav ul li a {
   font-family: 'Roboto Slab', sans-serif;
-  color: white;
+  color: #222;
   text-decoration: none;
-  border-bottom: 0.25rem white solid;
+  border-bottom: 0.25rem #222 solid;
 }
 
 nav ul li a:active,
@@ -153,31 +154,40 @@ section.impression {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
-section.impression h2 {
-  text-align: center;
-  mix-blend-mode: overlay;
-  background-color: black;
-  color: white;
-  font-size: 10vh;
-  line-height: 1.5;
+section.impression img.selfie {
+  position: absolute;
+  max-width: min(720px, calc(100vw - 6rem));
+  max-height: calc(100vh - 4rem);
+  mix-blend-mode: multiply;
+  transform: translateY(-1rem) translateX(2rem);
+}
+
+section.impression img.couple {
+  position: absolute;
+  max-width: min(720px, calc(100vw - 6rem));
+  max-height: calc(100vh - 4rem);
+  mix-blend-mode: multiply;
+  transform: translateY(1rem) translateX(-2rem);
 }
 
 .with-big-header {
   position: relative;
-  padding-top: 7rem;
+  padding-top: 9rem;
 }
 
 .with-big-header h3.big-header {
   font-family: 'Playfair Display', serif;
   position: absolute;
-  transform: rotate3d(0, 0, 1, -17deg);
+  /*transform: rotate3d(0, 0, 1, -17deg);*/
   top: 0;
   z-index: -1;
   font-size: 8rem;
   line-height: 8rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
   color: #ccc;
   font-weight: lighter;
 }
@@ -304,19 +314,19 @@ footer {
 
 @media only screen and (min-width: 960px) {
   section.impression {
-    background-image: url(/assets/background-full.jpg);
+    /*background-image: url(/assets/background-full.jpg);*/
   }
 }
 
 @media only screen and (min-width: 720px) and (max-width: 960px) {
   section.impression {
-    background-image: url(/assets/background-1280w.jpg);
+    /*background-image: url(/assets/background-1280w.jpg);*/
   }
 }
 
 @media only screen and (max-width: 720px) {
   section.impression {
-    background-image: url(/assets/background-960w.jpg);
+    /*background-image: url(/assets/background-960w.jpg);*/
   }
 }
 
