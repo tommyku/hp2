@@ -79,12 +79,12 @@ nav ul li a {
 nav ul li a:active,
 nav ul li a:focus,
 nav ul li a:visited {
-  color: white;
+  color: #222;
 }
 
 nav ul li a:hover {
-  color: white;
-  border-bottom: 0.5rem white double;
+  color: #666;
+  border-bottom: 0.5rem #666 double;
 }
 
 hr.rotated {
