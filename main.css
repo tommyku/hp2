@@ -163,7 +163,7 @@ section.impression img.selfie {
   max-width: min(720px, calc(100vw - 6rem));
   max-height: calc(100vh - 4rem);
   mix-blend-mode: multiply;
-  transform: translateY(-1rem) translateX(2rem);
+  transform: translateY(0rem) translateX(2rem);
 }
 
 section.impression img.couple {
@@ -171,7 +171,7 @@ section.impression img.couple {
   max-width: min(720px, calc(100vw - 6rem));
   max-height: calc(100vh - 4rem);
   mix-blend-mode: multiply;
-  transform: translateY(1rem) translateX(-2rem);
+  transform: translateY(2rem) translateX(-2rem);
 }
 
 .with-big-header {
