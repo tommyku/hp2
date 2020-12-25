@@ -154,6 +154,15 @@ main p {
   margin: 1em auto;
 }
 
+main h4 {
+  width: 80%;
+  margin: 1em auto;
+}
+
+section.impression-placeholder {
+  padding-top: 6rem;
+}
+
 section.impression {
   background-color: white;
   background-size: cover;
