@@ -46,7 +46,10 @@ header h2 a {
   text-decoration: none;
 }
 
-header h2 a:hover {
+header h2 a:hover,
+header h2 a:active,
+header h2 a:focus,
+header h2 a:visited {
   color: black;
 }
 
@@ -410,7 +413,8 @@ footer {
     width: auto;
   }
 
-  main p {
+  main p,
+  main h4 {
     width: 100%;
   }
 
