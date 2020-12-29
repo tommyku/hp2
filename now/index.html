@@ -103,6 +103,10 @@
     <script type="text/javascript" src="/main.js"></script>
 
     <!-- Tracking pixel -->
-    <img src="https://bit.ly/3aPPgQR" style="width: 0px; height: 0px; margin: 0; padding: 0; visibility: hidden;" />
+    <!-- TODO(2020-12-29): make this a web component -->
+    <a href="https://blog.tommyku.com/blog/website-analytics-for-lazy-people" id="tracking-status" class="unloaded" title="Tracking Indicator"></a>
+    <img src="https://bit.ly/3aPPgQR"
+         style="width: 0px; height: 0px; margin: 0; padding: 0; visibility: hidden;"
+         onload="javascript: document.querySelector('#tracking-status').classList.replace('unloaded', 'loaded')" />
   </body>
 </html>

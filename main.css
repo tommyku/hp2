@@ -424,3 +424,20 @@ footer {
     box-sizing: border-box;
   }
 }
+
+a#tracking-status {
+  display: block;
+  width: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  text-decoration: none;
+}
+
+a#tracking-status.unloaded::before {
+  content: "\1F648";
+}
+
+a#tracking-status.loaded::before {
+  content: "\1F440";
+}
