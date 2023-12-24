@@ -179,6 +179,10 @@ section.impression {
   overflow-x: hidden;
 }
 
+section.impression picture.impression {
+  max-height: calc(100vh - 4rem);
+}
+
 section.impression img.selfie {
   position: absolute;
   max-width: min(720px, calc(100vw - 6rem));

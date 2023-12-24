@@ -28,24 +28,12 @@
     </header>
 
     <section class="impression">
-      <img srcset="assets/selfie-c-320w.jpg 480w,
-                   assets/selfie-960w.jpg 960w,
-                   assets/selfie-1280w.jpg 1280w"
-           sizes="(max-width: 480px) 480px,
-                  (max-width: 960px) 960px,
-                  1280px"
-           class="selfie"
-           src="assets/selfie-1280w.jpg"
-           alt="My selfie" />
-      <img srcset="assets/couple-c-320w.jpg 480w,
-                   assets/couple-960w.jpg 960w,
-                   assets/couple-1280w.jpg 1280w"
-           sizes="(max-width: 480px) 480px,
-                  (max-width: 960px) 960px,
-                  1280px"
-           class="couple"
-           src="assets/couple-1280w.jpg"
-           alt="Photo of couple" />
+      <picture>
+        <source media="(min-width: 1280px)" srcset="assets/impression-1280w.jpg">
+        <source media="(min-width: 720px)" srcset="assets/impression-960w.jpg">
+        <source media="(min-width: 320px)" srcset="assets/impression-480w.jpg">
+        <img src="assets/impression-1280w.jpg" alt="" />
+      </picture>
     </section>
 
     <main>
